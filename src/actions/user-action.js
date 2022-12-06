@@ -24,10 +24,20 @@ export function showError() {
 }
 
 export function getUsers() {
-  return (dispatch) => {
-    axios
+  return async (dispatch) => {
+    try {
+      const res = await axios.get(
+        "https://jsonplaceholder.typicode.com/users/4"
+      );
+      console.log("res=>", res);
+      dispatch(updateUser(res.data.name));
+    } catch (e) {
+      dispatch(showError());
+    }
+
+    /* axios
       .get("https://jsonplaceholder.typicode.com/users/5")
       .then((res) => dispatch(updateUser(res.data.name)))
-      .catch((err) => dispatch(showError()));
+      .catch((err) => dispatch(showError())); */
   };
 }
