@@ -34,7 +34,7 @@ export function getUsers() {
     } catch (e) {
       dispatch(showError());
     }
-
+    // bu sekildede yapilabilir veya yukardaki gibi
     /* axios
       .get("https://jsonplaceholder.typicode.com/users/5")
       .then((res) => dispatch(updateUser(res.data.name)))

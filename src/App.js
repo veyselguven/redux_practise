@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   onUpdateUser = () => {
-    // dipatch actioni store gondermekti amaci
+    // dipatch actioni store gondermek  amaci
     // this.props.dispatch(updateUser("Hatun"));
     this.props.onUpdateUser("Hatunn");
   };
