@@ -35,9 +35,11 @@ export function getUsers() {
       dispatch(showError());
     }
     // bu sekildede yapilabilir veya yukardaki gibi
-    /* axios
+    /* 
+       axios
       .get("https://jsonplaceholder.typicode.com/users/5")
       .then((res) => dispatch(updateUser(res.data.name)))
-      .catch((err) => dispatch(showError())); */
+      .catch((err) => dispatch(showError()));
+    */
   };
 }

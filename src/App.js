@@ -61,10 +61,10 @@ class App extends Component {
 // });
 const mapStateToProps = (state, props) => {
   // console.log("props=>", props);
-  // console.log("state=>", state);
+  console.log("state=>", state);
   return state;
 };
-// mapdispatchtoprops bizim dispatch ettigimiz actiolarimizi mapleyin bir yapi
+// mapdispatchtoprops bizim dispatch ettigimiz actiolarimizi mapleyen bir yapi
 
 const mapDispatchToProps = {
   onUpdateUser: updateUser,
